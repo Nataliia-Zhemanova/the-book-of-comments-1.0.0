@@ -25,7 +25,7 @@ module.exports = gql`
 
     input CommentFields {
         commentId: ID
-        userId: ID
+        user: UserFields
         rating: Int
         title: String
         description: String

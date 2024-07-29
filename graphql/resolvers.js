@@ -59,14 +59,14 @@ module.exports = {
     },
 
 
-  async commentCreate(_, {commentInput: userId, rating, title, description}) {
+  async commentCreate(_, {commentInput: {user: {userId}, rating, title, description}}) {
 
-   //const objectId = new mongoose.Types.ObjectId(userId)
+   const objectId = new mongoose.Types.ObjectId(userId)
     const commentId = generateId();
     const createdComment =
       new Comment({
         _id: commentId,
-        user: userId,
+        user: objectId,
         //user: objectId,
         createdAt: new Date().toISOString(),
         rating: rating,
