@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha src/_test/user/userCreate.spec.js",
+    "test": "PORT=6000 TEST_RUNNER=true mocha src/_test/user/user1/userCreate1.spec.js --timeout 10000",
     "start": "nodemon src/index.js"
   },
   "keywords": [],
