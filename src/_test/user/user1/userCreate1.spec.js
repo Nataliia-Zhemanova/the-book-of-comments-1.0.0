@@ -1,4 +1,4 @@
-const { expect } = require ('chai')
+const { expect } = require("chai");
 const { userCreateQ } = require('./queries')
 const { user } = require('./data')
 const gqlRequest = require('./gqlRequest')
