@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha src/_test/user/userCreate.spec.js",
     "start": "nodemon src/index.js"
   },
   "keywords": [],
@@ -18,9 +18,12 @@
     "mocha": "^10.7.0",
     "mongodb": "^6.8.0",
     "mongoose": "^8.5.1",
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0"
   },
   "devDependencies": {
-    "supertest": "^7.0.0"
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3"
   }
 }
