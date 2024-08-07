@@ -18,7 +18,7 @@ module.exports = gql`
     }
 
     input UserFields {
-        userId: ID!
+        userId: ID
         firstName: String
         lastName: String
     }
